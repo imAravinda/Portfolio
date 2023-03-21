@@ -11,7 +11,7 @@ export const Section = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     position: relative;
     top: 10%;
@@ -22,13 +22,13 @@ export const Role  = styled.div`
     font-size: 32px;
     display: flex;
     justify-content: left;
-    width: 93%;
+    width: 80%;
     font-weight: 600;
     margin-bottom: 5%;
 `
 export const Header = styled.div`
     display: flex;
-    width: 93%;
+    width: 80%;
     justify-content: left;
     align-items: baseline;
     font-size: 64px;
@@ -41,7 +41,7 @@ export const Header = styled.div`
 export const CoverImage = styled.div`
     display: flex;
     justify-content: right;
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin-top: 5%;
 `

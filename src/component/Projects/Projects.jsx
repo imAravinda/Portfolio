@@ -11,7 +11,9 @@ import {
     SubHeading,
     Name,
     H2,
-    P
+    P,
+    ButtonSection,
+    Button
   } from './ProojectElements'
   import Slider from "react-slick";
   import { useState } from "react";
@@ -31,13 +33,13 @@ import ProjectsDetails from '../../Data/ProjectsOrders';
       
     return ( 
         
-        <Container id="Menu">
+        <Container id="Projects">
             <Section1>
                 <Heading data-aos={"zoom-in"}>
                     My <P>Works</P>
                 </Heading>
             </Section1>
-            <Section2 data-aos={"zoom-out-up"}>
+            <Section2 >
                 <Slider {...settings}>
                     {
                         ProjectsDetails.map((cardData,index)=>{
@@ -51,6 +53,13 @@ import ProjectsDetails from '../../Data/ProjectsOrders';
                                           <SubHeading>{cardData.name}</SubHeading>
                                           <Name>{cardData.desc}</Name>
                                         </Description>
+                                        <ButtonSection>
+                                          <Link to = {cardData.link} className='li'>
+                                            <Button>
+                                                See More
+                                            </Button>
+                                          </Link>
+                                        </ButtonSection>
                                       </div>
                                 </SubSec>
                             )

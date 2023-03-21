@@ -1,16 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './component/NavBar/Navbar';
 import Aos from 'aos';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Route, Router, Routes } from 'react-router-dom';
 import Cover from './component/Cover/Cover';
 import About from './component/About/About';
 import Projects from './component/Projects/Projects';
 import Contact from './component/Contact/Contact';
-import Footer from './component/Footer/Footer';
-
-
+import "aos/dist/aos.css";
+import Fallback from './component/FallBack/FallBack';
+const NavBar = lazy(() => import('./component/NavBar/Navbar'));
+const Home = lazy(() => import('./Pages/Home'));
+const Footer = lazy(() => import('./component/Footer/Footer'));
 function App() {
   useEffect(() => {
     Aos.init({duration:1000});
@@ -42,14 +43,16 @@ function App() {
       );
     }
   }
+  
   return (
     <div className="App">
-      <NavBar ScrollToTop={scrollToTop}/>
-      <Cover/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
+      <Suspense fallback={<Fallback />}>
+        <NavBar ScrollToTop={scrollToTop}/>
+          <Routes>
+            <Route path="/" element={<Home ScrollToTop={scrollToTop}/>}/>
+          </Routes>
+        <Footer/>
+      </Suspense>
     </div>
   );
 }

@@ -3,15 +3,19 @@ import { FaPhoneSquareAlt,FaFacebook,FaGithub} from 'react-icons/fa';
 import { ImLinkedin } from 'react-icons/im';
 import { GrInstagram } from 'react-icons/gr';
 import * as c from './ContactElements';
+import { Link } from 'react-router-dom';
 const Contact = () => {
     return ( 
-        <c.Container>
+        <c.Container id="Contact">
             <c.DetailSection>
-                <c.Heading>
+                <c.Heading data-aos="zoom-in">
                     Contact <c.P>Me</c.P>
                 </c.Heading>
                 <c.ContactDetails>
-                    <c.Contact>
+                    <c.Contact data-aos="fade-right"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
                         <c.Icon>
                             <MdEmail/>
                         </c.Icon>
@@ -19,7 +23,10 @@ const Contact = () => {
                             acfernando1999@gmail.com
                         </c.Desc>
                     </c.Contact>
-                    <c.Contact>
+                    <c.Contact data-aos="fade-right"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
                         <c.Icon>
                             <FaPhoneSquareAlt/>
                         </c.Icon>
@@ -29,26 +36,26 @@ const Contact = () => {
                     </c.Contact>
                 </c.ContactDetails>
                 <c.SocialMedia>
-                    <c.Icon><FaFacebook/></c.Icon>
-                    <c.Icon><GrInstagram/></c.Icon>
-                    <c.Icon><ImLinkedin/></c.Icon>
-                    <c.Icon><FaGithub/></c.Icon>
+                    <Link to='https://www.facebook.com/aravinda.chathuranga.3' className='li'><c.Icon data-aos="zoom-in-down"><FaFacebook/></c.Icon></Link>
+                    <Link to='https://www.instagram.com/__a_r_a_a__/' className='li'><c.Icon data-aos="zoom-in-down"><GrInstagram/></c.Icon></Link>
+                    <Link to='https://www.linkedin.com/in/aravinda-chathuranga-7a868a210/' className='li'><c.Icon data-aos="zoom-in-down"><ImLinkedin/></c.Icon></Link>
+                    <Link to='https://github.com/imAravinda' className='li'><c.Icon data-aos="zoom-in-down"><FaGithub/></c.Icon></Link>
                 </c.SocialMedia>
-                <c.ButtonSection>
+                <c.ButtonSection data-aos="zoom-in-up">
                     <c.Button>Download CV</c.Button>
                 </c.ButtonSection>
             </c.DetailSection>
             <c.FormSection>
-                <c.TextFeild>
+                <c.TextFeild data-aos="zoom-out-down">
                     <c.InputText type="text" placeholder='Your Name'/>
                 </c.TextFeild>
-                <c.TextFeild>
+                <c.TextFeild data-aos="zoom-out-down">
                     <c.InputText type="text" placeholder='Your Email'/>
                 </c.TextFeild>
-                <c.TextBox>
+                <c.TextBox data-aos="zoom-out-down">
                     <c.InputTextArea type="text" placeholder='Your Message'/>
                 </c.TextBox>
-                <c.ButtonSection>
+                <c.ButtonSection data-aos="zoom-in-up">
                     <c.Button>
                         Submit
                     </c.Button>

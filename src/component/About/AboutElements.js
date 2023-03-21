@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Section = styled.div`
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 80%;
     flex-direction: column;
     position: relative;
     top: 10%;
@@ -21,12 +21,12 @@ export const Role  = styled.div`
     font-size: 32px;
     display: flex;
     justify-content: left;
-    width: 93%;
+    width: 80%;
     font-weight: 600;
 `
 export const Header = styled.div`
     display: flex;
-    width: 93%;
+    width: 80%;
     justify-content: center;
     align-items: baseline;
     font-size: 64px;
@@ -53,7 +53,7 @@ export const P = styled.p`
 `
 export const Description = styled.div`
     display: flex;
-    width: 93%;
+    width: 80%;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ export const Details = styled.div`
     display: flex;
     flex-direction: column;
     color: #fff;
-    width: 100%;
+    width: 80%;
     align-items: center;
 `
 export const Headings = styled.div`

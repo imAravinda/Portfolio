@@ -16,7 +16,7 @@ export const Section1 = styled.div`
     align-items: center;
 `
 export const Section2 = styled.div`
-    width: 90%;
+    width: 80%;
     height: 90%;
     display: block;
     position: relative;
@@ -36,7 +36,7 @@ export const SubSec = styled.div`
 `
 export const Heading = styled.div`
     display: flex;
-    width: 93%;
+    width: 80%;
     justify-content: center;
     align-items: baseline;
     font-size: 64px;
@@ -93,3 +93,19 @@ export const SubHeading = styled.div`
     letter-spacing: 0.2rem;
     font-size: 24px;
 `
+export const ButtonSection = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+` 
+export const Button = styled.button`
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #50C878;
+    color: #fff;
+    cursor: pointer;
+` 

@@ -121,7 +121,7 @@ export const Navbar=styled.div`
         }
     `
     export const Hamburger = styled.div`
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         font-size: 28px;

@@ -59,7 +59,7 @@ const Contact = () => {
                 <c.TextBox data-aos="zoom-out-down">
                     <c.InputTextArea type="text" placeholder='Your Message'/>
                 </c.TextBox>
-                <c.ButtonSection data-aos="zoom-in-up">
+                <c.ButtonSection data-aos="fade-right">
                     <c.Button>
                         Submit
                     </c.Button>

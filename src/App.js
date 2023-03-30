@@ -7,7 +7,7 @@ import Cover from './component/Cover/Cover';
 import About from './component/About/About';
 import Projects from './component/Projects/Projects';
 import Contact from './component/Contact/Contact';
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 import Fallback from './component/FallBack/FallBack';
 const NavBar = lazy(() => import('./component/NavBar/Navbar'));
 const Home = lazy(() => import('./Pages/Home'));

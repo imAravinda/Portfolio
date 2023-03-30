@@ -7,6 +7,8 @@ export const Container = styled.div`
     width: 93%;
     @media screen and (max-width: 768px){
         flex-direction: column;
+        height: 100%;
+        margin-bottom: 15%;
     }
 ` 
 export const DetailSection = styled.div`
@@ -40,6 +42,9 @@ export const ContactDetails = styled.div`
     justify-content: left;
     align-items: center;
     width: 100%;
+    @media screen and (max-width: 800px){
+        justify-content: center;
+    }
 ` 
 export const Contact = styled.div`
     display: flex;
@@ -81,6 +86,7 @@ export const ButtonSection = styled.div`
     width: 80%;
     @media screen and (max-width: 800px){
         margin-top: 5%;
+        width: 100%;
     }
 ` 
 export const Button = styled.button`
@@ -89,14 +95,15 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     height: 50px;
+    border: none;
     border-radius: 10px;
     background-color: #50C878;
     color: #fff;
     cursor: pointer;
     @media screen and (max-width: 800px){
-        width: 100px;
-        height: 30px;
-        border-radius: 5px;
+        width: 90px;
+        height: 25px;
+        border-radius: 8px;
         font-size: 12px;
     }
 ` 

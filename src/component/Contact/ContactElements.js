@@ -5,6 +5,9 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 93%;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+    }
 ` 
 export const DetailSection = styled.div`
     display: flex;
@@ -22,6 +25,9 @@ export const Heading = styled.div`
     font-weight: 800;
     position: relative;
     left: 15%;
+    @media screen and (max-width: 800px){
+            font-size: 28px;
+        }
 ` 
 export const P = styled.p`
     color: #50C878;
@@ -41,11 +47,24 @@ export const Contact = styled.div`
     width: 80%;
     margin: 5% 0;
     font-size: 20px;
+    @media screen and (max-width: 800px){
+            font-size: 12px;
+    }
 ` 
 export const Icon = styled.div`
-    margin: 0 5%;
-    color: #50C878;
-    font-size: 28px;
+    &{
+        margin: 0 5%;
+        color: #50C878;
+        font-size: 28px;
+    }
+    &:hover{
+        transform: scale3d(1.2);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 800px){
+        font-size: 14px;
+    }
 ` 
 export const Desc = styled.div`
 
@@ -60,6 +79,9 @@ export const ButtonSection = styled.div`
     display: flex;
     justify-content: left;
     width: 80%;
+    @media screen and (max-width: 800px){
+        margin-top: 5%;
+    }
 ` 
 export const Button = styled.button`
     width: 200px;
@@ -71,21 +93,41 @@ export const Button = styled.button`
     background-color: #50C878;
     color: #fff;
     cursor: pointer;
+    @media screen and (max-width: 800px){
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
 ` 
 export const FormSection = styled.div`
     display: flex;
     justify-content: right;
     flex-direction: column;
+    @media screen and (max-width: 800px){
+        justify-content: center;
+        align-items: center;
+    }
 ` 
 export const TextFeild = styled.div`
     width: 600px;
     height: 30px;
     margin: 3% 0;
+    @media screen and (max-width: 800px){
+        width: 300px;
+        height: 30px;
+        margin: 5% 0;
+    }
 ` 
 export const TextBox = styled.div`
     width: 600px;
     margin: 3% 0 10% 0;
     height: 150px;
+    @media screen and (max-width: 800px){
+        width: 300px;
+        height: 70px;
+        margin: 5% 0;
+    }
 ` 
 export const InputText = styled.input`
     width: 100%;
@@ -96,6 +138,9 @@ export const InputText = styled.input`
     border: none;
     padding: 2%;
     font-size:18px;
+    @media screen and (max-width: 800px){
+        font-size: 12px;
+    }
 `
 export const InputTextArea = styled.textarea`
     width: 100%;
@@ -106,4 +151,7 @@ export const InputTextArea = styled.textarea`
     border: none;
     padding: 2%;
     font-size:18px;
+    @media screen and (max-width: 800px){
+        font-size: 12px;
+    }
 `

@@ -1,9 +1,9 @@
-import img from '../images/projects/Resto.jpg';
-import img1 from '../images/projects/Travel_Guide.jpg';
-import img2 from '../images/projects/Pawnner.jpg';
+import img from '../images/projects/Resto.png';
+import img1 from '../images/projects/Travel_Guide.png';
+import img2 from '../images/projects/P.png';
 import img3 from '../images/projects/Hostel_Management_System.jpg';
-import img4 from '../images/projects/Healthcare_Management_System.jpg';
-import img5 from '../images/projects/Weather_App.jpg';
+import img4 from '../images/projects/Healthcare_Management_System.png';
+import img5 from '../images/projects/Weather_App.png';
 const ProjectsDetails = [
     {
         name : "Resto",

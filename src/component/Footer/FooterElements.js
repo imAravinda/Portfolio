@@ -12,6 +12,9 @@ export const Container = styled.div`
     margin-top: 5%;
     font-size: 16px;
     font-weight: 600;
+    @media screen and (max-width: 768px){
+        font-size: 12px;
+    }
 `
 export const Sec = styled.div`
     display: flex;

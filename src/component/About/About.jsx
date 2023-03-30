@@ -1,10 +1,11 @@
 import * as c from './AboutElements'
 import img from '../../images/portfolioImg1.jpg'
-import { GrReactjs } from 'react-icons/gr';
+import { GrReactjs,GrMysql } from 'react-icons/gr';
 import { IoLogoNodejs,IoLogoJavascript } from 'react-icons/io';
-import { SiHtml5,SiCss3, SiCsharp, SiAdobexd,SiMongodb,SiMysql } from 'react-icons/si';
-import { DiJava } from 'react-icons/di';
+import { SiHtml5,SiCss3, SiCsharp, SiAdobexd,SiMongodb,SiMysql,SiPython,SiPostman,SiJirasoftware } from 'react-icons/si';
+import { DiJava,DiGit,DiMysql } from 'react-icons/di';
 import { CgFigma } from 'react-icons/cg';
+
 import { useRef, useState } from 'react';
 const About = () => {
     const[select,setSelect] = useState(true);
@@ -19,7 +20,8 @@ const About = () => {
     return ( 
         <c.Container id="About">
             <c.Section>
-                <c.CoverImage data-aos="flip-right">
+                <c.CoverImage data-aos="flip-right"
+                                data-aos-duration="1000">
                     <c.Image src={img}/>
                 </c.CoverImage>
             </c.Section>
@@ -39,6 +41,7 @@ const About = () => {
                         <c.Heading data-aos="zoom-out" ref={(el) => (inputRef.current[0] = el)} onClick={() => handleClick(0)}>Skills</c.Heading>
                         <c.Heading data-aos="zoom-out" ref={(el) => (inputRef.current[1] = el)} onClick={() => handleClick(1)}>Education</c.Heading>
                         <c.Heading data-aos="zoom-out" ref={(el) => (inputRef.current[2] = el)} onClick={() => handleClick(2)}>Experience</c.Heading>
+                        <c.Heading data-aos="zoom-out" ref={(el) => (inputRef.current[3] = el)} onClick={() => handleClick(3)}>Other Activities</c.Heading>
                     </c.Headings>
                     {
                        select && value === "Skills" ?
@@ -123,15 +126,7 @@ const About = () => {
                                         data-aos-anchor="#example-anchor"
                                         data-aos-offset="500"
                                         data-aos-duration="500">
-                                        <c.Icon></c.Icon>
-                                        <c.Text>JavaFX</c.Text>
-                                    </c.Attribute>
-                                    <c.Attribute
-                                         data-aos="fade-left"
-                                        data-aos-anchor="#example-anchor"
-                                        data-aos-offset="500"
-                                        data-aos-duration="500">
-                                        <c.Icon><SiMysql/></c.Icon>
+                                        <c.Icon><GrMysql/></c.Icon>
                                         <c.Text>MySql</c.Text>
                                     </c.Attribute>
                                 </c.AttributeSec>
@@ -159,6 +154,45 @@ const About = () => {
                                     </c.Attribute>
                                 </c.AttributeSec>
                             </c.DetailsSubSec>
+                            <c.DetailsSubSec>
+                                <c.DetailHead data-aos="zoom-in">
+                                    Others
+                                </c.DetailHead>
+                                <c.AttributeSec>
+                                    <c.Attribute
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Icon><SiPostman/></c.Icon>
+                                        <c.Text>Postman</c.Text>
+                                    </c.Attribute>
+                                    <c.Attribute
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Icon><SiJirasoftware/></c.Icon>
+                                        <c.Text>Jira</c.Text>
+                                    </c.Attribute>
+                                    <c.Attribute
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Icon><SiPython/></c.Icon>
+                                        <c.Text>Python</c.Text>
+                                    </c.Attribute>
+                                    <c.Attribute
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Icon><DiGit/></c.Icon>
+                                        <c.Text>Git</c.Text>
+                                    </c.Attribute>
+                                </c.AttributeSec>
+                            </c.DetailsSubSec>
                         </c.DetailsSec>
                         :
                         value === "Education" ?
@@ -168,13 +202,13 @@ const About = () => {
                                     Primary School
                                 </c.DetailHead>
                                 <c.AttributeSec>
-                                    <c.Attribute
+                                    <c.Attribute1
                                          data-aos="fade-left"
                                         data-aos-anchor="#example-anchor"
                                         data-aos-offset="500"
                                         data-aos-duration="500">
                                         <c.Text>Bauddhaloka Maha Vidyalaya</c.Text>
-                                    </c.Attribute>
+                                    </c.Attribute1>
                                 </c.AttributeSec>
                             </c.DetailsSubSec>
                             <c.DetailsSubSec>
@@ -182,13 +216,13 @@ const About = () => {
                                     Secondary School
                                 </c.DetailHead>
                                 <c.AttributeSec>
-                                    <c.Attribute
+                                    <c.Attribute1
                                          data-aos="fade-left"
                                         data-aos-anchor="#example-anchor"
                                         data-aos-offset="500"
                                         data-aos-duration="500">
                                         <c.Text>Taxila Central College</c.Text>
-                                    </c.Attribute>
+                                    </c.Attribute1>
                                 </c.AttributeSec>
                             </c.DetailsSubSec>
                             <c.DetailsSubSec>
@@ -196,13 +230,13 @@ const About = () => {
                                   University
                                 </c.DetailHead>
                                 <c.AttributeSec>
-                                    <c.Attribute
+                                    <c.Attribute1
                                          data-aos="fade-left"
                                         data-aos-anchor="#example-anchor"
                                         data-aos-offset="500"
                                         data-aos-duration="500">
                                         <c.Text>University Of Ruhuna</c.Text>
-                                    </c.Attribute>
+                                    </c.Attribute1>
                                 </c.AttributeSec>
                             </c.DetailsSubSec>
                         </c.DetailsSec>
@@ -214,13 +248,77 @@ const About = () => {
                                     Intern at People's Bank
                                 </c.DetailHead>
                                 <c.AttributeSec>
-                                    <c.Attribute
+                                    <c.Attribute1
                                          data-aos="fade-left"
                                         data-aos-anchor="#example-anchor"
                                         data-aos-offset="500"
                                         data-aos-duration="500">
                                         <c.Text>From 2019 To 2020</c.Text>
-                                    </c.Attribute>
+                                    </c.Attribute1>
+                                </c.AttributeSec>
+                            </c.DetailsSubSec>
+                        </c.DetailsSec>
+                        :
+                        value === "Other Activities" ? 
+                        <c.DetailsSec>
+                            <c.DetailsSubSec data-aos="zoom-in">
+                                <c.DetailHead>
+                                    Ruhuna Science Research Circle
+                                </c.DetailHead>
+                                <c.AttributeSec>
+                                    <c.Attribute1
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Text>Organizing Commity Member </c.Text>
+                                        <c.Text>From 2021 To Present</c.Text>
+                                    </c.Attribute1>
+                                </c.AttributeSec>
+                            </c.DetailsSubSec>
+                            <c.DetailsSubSec data-aos="zoom-in">
+                                <c.DetailHead>
+                                    Taekwondo
+                                </c.DetailHead>
+                                <c.AttributeSec>
+                                    <c.Attribute1
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Text>University Player</c.Text>
+                                        <c.Text>From 2021 To Present</c.Text>
+                                    </c.Attribute1>
+                                </c.AttributeSec>
+                            </c.DetailsSubSec>
+                            <c.DetailsSubSec data-aos="zoom-in">
+                                <c.DetailHead>
+                                    Computer Science Student Commiunity
+                                </c.DetailHead>
+                                <c.AttributeSec>
+                                    <c.Attribute1
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Text>Organizing Commity Member</c.Text>
+                                        <c.Text>From 2021 To Present</c.Text>
+                                    </c.Attribute1>
+                                </c.AttributeSec>
+                            </c.DetailsSubSec>
+                            <c.DetailsSubSec data-aos="zoom-in">
+                                <c.DetailHead>
+                                    Career Guidance Unit & Career Circle
+                                </c.DetailHead>
+                                <c.AttributeSec>
+                                    <c.Attribute1
+                                         data-aos="fade-left"
+                                        data-aos-anchor="#example-anchor"
+                                        data-aos-offset="500"
+                                        data-aos-duration="500">
+                                        <c.Text>Organizing Commity Member</c.Text>
+                                        <c.Text>From 2021 To Present</c.Text>
+                                    </c.Attribute1>
                                 </c.AttributeSec>
                             </c.DetailsSubSec>
                         </c.DetailsSec>

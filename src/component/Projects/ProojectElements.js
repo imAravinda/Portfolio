@@ -7,6 +7,9 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin: 5% 0;
+    @media screen and (max-width: 768px){
+        height: 100%;
+    }
 `
 export const Section1 = styled.div`
     display: flex;
@@ -31,8 +34,11 @@ export const SubSec = styled.div`
     flex-direction: column;
     background-color: #161a1d;
     border-radius: 20px;
-    box-shadow: 2px 3px 3px 2px #fdf8ed;
+    box-shadow: 2px 3px 3px 2px #50C878ad;
     margin-top: 5%;
+    @media screen and (max-width: 768px){
+        height: 250px;
+    }
 `
 export const Heading = styled.div`
     display: flex;
@@ -43,6 +49,9 @@ export const Heading = styled.div`
     color: #fff;
     letter-spacing: 0.5rem;
     font-weight: 800;
+    @media screen and (max-width: 768px){
+        font-size: 28px;
+    }
 `
 export const P =styled.p`
     color: #50C878;
@@ -65,10 +74,20 @@ export const Description = styled.div`
     text-align: center;
     color: #fff;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 `
 export const Name = styled.h2`
-    letter-spacing: 0.2rem;
+    
     font-size: 16px;
+    color: #ffffff;
+    text-align: justify;
+    margin: 0 5%;
+    @media screen and (max-width:800px) {
+        font-size: 12px;
+    }
 `
 export const Section3 = styled.div`
     width: 150px;
@@ -89,23 +108,34 @@ export const Img = styled.img`
 export const SubHeading = styled.div`
     text-align: center;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.2rem;
-    font-size: 24px;
+    font-size: 28px;
+    margin: 2% 0;
+    @media screen and (max-width:800px) {
+        font-size: 18px;
+    }
 `
 export const ButtonSection = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 5% 0;
 ` 
-export const Button = styled.button`
-    width: 200px;
+export const Button = styled.div`
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    border-radius: 10px;
-    background-color: #50C878;
+    border-radius: 50%;
+    background-color: #424242;
     color: #fff;
+    font-size: 24px;
     cursor: pointer;
+    @media screen and (max-width:800px) {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
 ` 

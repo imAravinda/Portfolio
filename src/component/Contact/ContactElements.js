@@ -107,7 +107,7 @@ export const Button = styled.button`
         font-size: 12px;
     }
 ` 
-export const FormSection = styled.div`
+export const FormSection = styled.form`
     display: flex;
     justify-content: right;
     flex-direction: column;
